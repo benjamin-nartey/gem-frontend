@@ -1,17 +1,21 @@
-import React from "react";
+import Image from "next/image";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="lg:px-32 px-4 py-16 w-full mt-[8rem] lg:mt-auto"
+      className="lg:px-32 px-4 py-16 w-full mt-[8rem] lg:mt-auto animate-slide-up"
     >
       <div className="flex flex-col lg:flex-row justify-center lg:items-start items-center w-full gap-8 h-[35rem]">
-        <div className="w-full h-full shadow-lg lg:order-first order-last">
-          <img
+        <div className="relative w-full h-full shadow-lg lg:order-first order-last">
+          <Image
             src={`/pastor5.JPG`}
             alt="pastor"
             className="h-full w-full object-cover object-center "
+            fill
+            priority
+            quality={90}
+            sizes="100"
           />
         </div>
 

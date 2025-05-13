@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { Hanken_Grotesk } from "next/font/google";
 
 import "../globals.css";
 import Navigation from "@/components/Navigation";
 
-import { Toaster } from "@/components/ui/toaster";
 import { getMe } from "@/lib/getMe";
 import { cookies } from "next/headers";
-
-const inter = Hanken_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
@@ -32,12 +28,5 @@ export default async function RootLayout({
   const url = `${BASE_URL}/api/v1/users/getMe`;
   const userData = await getMe(url, token);
 
-  return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Navigation userData={userData}>{children}</Navigation>
-        <Toaster />
-      </body>
-    </html>
-  );
+  return <Navigation userData={userData}>{children}</Navigation>;
 }

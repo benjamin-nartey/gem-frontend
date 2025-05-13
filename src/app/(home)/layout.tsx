@@ -28,11 +28,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="scroll-smooth scrollbar-hide" lang="en">
-      <body className={`${hankenGrotesk.className} antialiased`}>
-        <Header />
-        {children}
-      </body>
-    </html>
+    <section className={`${hankenGrotesk.className} antialiased`}>
+      <Header />
+      {children}
+    </section>
   );
 }

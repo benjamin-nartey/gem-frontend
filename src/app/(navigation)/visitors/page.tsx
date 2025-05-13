@@ -19,7 +19,7 @@ export default async function Users() {
   const visitors = await getAllVisitors(url, token);
 
   return (
-    <div className="container mx-auto lg:p-12 p-2 animate-slide-up">
+    <div className="container mx-auto lg:p-12 p-2 animate-slide-up relative">
       <VisitorsPage visitors={visitors} token={token} />
     </div>
   );

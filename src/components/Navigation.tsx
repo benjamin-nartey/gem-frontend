@@ -53,7 +53,7 @@ export default function Navigation({ userData, children }: NavigationProps) {
         <div className="lg:flex flex-initial h-screen hidden bg-clip-padding backdrop-filter backdrop-blur-md bg-primary">
           <Sidebar />
         </div>
-        <div className="main-content-column bg-[#fff] h-screen w-full overflow-y-auto overflow-x-hidden scrollbar-hide">
+        <div className="main-content-column bg-slate-200 h-screen w-full overflow-y-auto overflow-x-hidden scrollbar-hide">
           <div className="flex border-l-0 lg:border-l border-l-gray-300 w-full justify-between items-center sticky top-0 z-10 bg-primary text-white">
             <div className="w-full relative h-full p-5">
               <div className="w-full flex justify-between items-center">
@@ -99,7 +99,7 @@ export default function Navigation({ userData, children }: NavigationProps) {
               </div>
             </div>
           </div>
-          <div className="w-full bg-white ">{children}</div>
+          <div className="w-full">{children}</div>
         </div>
         {toggleSidebar && (
           <div className="fixed w-4/5 bg-primary h-screen overflow-y-auto shadow-md z-10 animate-slide-in">

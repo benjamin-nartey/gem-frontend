@@ -87,12 +87,12 @@ export function DataTable<TData, TValue>({
           placeholder="Filter Name..."
           value={(table.getState()?.globalFilter as string) ?? ""}
           onChange={(event) => table.setGlobalFilter(event.target.value)}
-          className="max-w-sm"
+          className="max-w-sm bg-white shadow-sm"
         />
 
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="outline" className="ml-auto">
+            <Button variant="outline" className="ml-auto shadow-sm">
               Columns
             </Button>
           </DropdownMenuTrigger>
@@ -121,7 +121,7 @@ export function DataTable<TData, TValue>({
         {isOpenEditVisitor && drawalEditComponent}
       </div>
 
-      <div className="rounded-md border ">
+      <div className="rounded-md border shadow-sm">
         <Table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <TableHeader className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 whitespace-nowrap">
             {table.getHeaderGroups().map((headerGroup) => (

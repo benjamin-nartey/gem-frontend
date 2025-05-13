@@ -1,12 +1,12 @@
 "use client";
 
-import React from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import Spinner from "./Spinner";
+import Image from "next/image";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
@@ -16,8 +16,8 @@ export default function LoginForm() {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const from =
-      new URLSearchParams(window.location.search).get("from") || "/dashboard";
+    // const from =
+    //   new URLSearchParams(window.location.search).get("from") || "/dashboard";
 
     setLoading(true);
 
@@ -64,11 +64,17 @@ export default function LoginForm() {
       onSubmit={handleSubmit}
       className="flex flex-col items-center justify-center px-4 py-8 bg-gray-400 lg:min-w-[30rem] lg:w-[30rem] w-full"
     >
-      <img
-        src="GEM LOGO TRANSPARENT BACKGROUND-01.png"
-        alt="church-logo"
-        className="h-[10rem] w-auto"
-      />
+      <div className=" relative h-[10rem] w-[15rem]">
+        <Image
+          src="/GEM LOGO TRANSPARENT BACKGROUND-01.png"
+          alt="church-logo"
+          fill
+          className="object-cover"
+          priority
+          quality={90}
+          sizes="100"
+        />
+      </div>
 
       <Input
         className="bg-white mb-4"

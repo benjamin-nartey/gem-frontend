@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function Dashboard() {
   return (
-    <div className="lg:p-12 p-2 flex flex-col items-center justify-center gap-8">
+    <div className="lg:p-12 p-2 flex flex-col items-center justify-center gap-8 bg-slate-200">
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-4 bg-gray-100/40 p-4">
         <Link href={`/visitors`} className="p-2  w-full animate-slide-in">
           <div className=" bg-white border-l-[5px] shadow border-l-primary cursor-pointer px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
