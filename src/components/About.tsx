@@ -6,21 +6,22 @@ export default function About() {
       id="about"
       className="lg:px-32 px-4 py-16 w-full mt-[8rem] lg:mt-auto animate-slide-up"
     >
-      <div className="flex flex-col lg:flex-row justify-center lg:items-start items-center w-full gap-8 h-[35rem]">
-        <div className="relative w-full h-full shadow-lg lg:order-first order-last">
+      <div className="flex flex-col lg:flex-row justify-center lg:items-start items-center w-full gap-8 lg:h-[35rem] h-auto">
+        <div className="relative w-full shadow-lg lg:order-first order-last lg:h-full h-[30rem]">
           <Image
             src={`/pastor5.JPG`}
             alt="pastor"
-            className="h-full w-full object-cover object-center "
+            className="h-full w-full object-cover object-center"
             fill
             priority
             quality={90}
             sizes="100"
+            placeholder="blur"
           />
         </div>
 
         <div className="w-full bg-white text-black text-center">
-          <h2 className="text-4xl text-black font-bold text-center mb-4">
+          <h2 className="text-4xl text-black font-bold text-center lg:mb-4">
             About Us
           </h2>
           <p className="mb-4 whitespace-break-spaces">

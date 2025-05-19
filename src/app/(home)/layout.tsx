@@ -18,7 +18,7 @@ import Header from "@/components/Header";
 const hankenGrotesk = Hanken_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Grace Empire Ministry",
+  title: "GEM",
   description: "Official website of Great Empire Ministry",
 };
 

@@ -1,0 +1,170 @@
+{
+  "type": "PullRequest",
+  "pulls": [
+    {
+      "order": 1,
+      "from": "USA",
+      "to": "CAN",
+      "startLat": 40.712776,
+      "startLng": -74.005974,
+      "endLat": 43.65107,
+      "endLng": -79.347015,
+      "arcAlt": 0.05,
+      "status": true
+    },
+    {
+      "order": 2,
+      "from": "CAN",
+      "to": "UK",
+      "startLat": 43.65107,
+      "startLng": -79.347015,
+      "endLat": 51.507351,
+      "endLng": -0.127758,
+      "arcAlt": 0.06,
+      "status": true
+    },
+    {
+      "order": 3,
+      "from": "UK",
+      "to": "DEU",
+      "startLat": 51.507351,
+      "startLng": -0.127758,
+      "endLat": 52.52,
+      "endLng": 13.405,
+      "arcAlt": 0.05,
+      "status": false
+    },
+    {
+      "order": 4,
+      "from": "DEU",
+      "to": "IND",
+      "startLat": 52.52,
+      "startLng": 13.405,
+      "endLat": 13.089869,
+      "endLng": 80.245901,
+      "arcAlt": 0.08,
+      "status": true
+    },
+    {
+      "order": 5,
+      "from": "IND",
+      "to": "UAE",
+      "startLat": 13.089869,
+      "startLng": 80.245901,
+      "endLat": 23.214066,
+      "endLng": 53.195262,
+      "arcAlt": 0.05,
+      "status": true
+    },
+    {
+      "order": 6,
+      "from": "UAE",
+      "to": "CHN",
+      "startLat": 23.214066,
+      "startLng": 53.195262,
+      "endLat": 39.9042,
+      "endLng": 116.4074,
+      "arcAlt": 0.07,
+      "status": false
+    },
+    {
+      "order": 7,
+      "from": "CHN",
+      "to": "JPN",
+      "startLat": 39.9042,
+      "startLng": 116.4074,
+      "endLat": 35.689487,
+      "endLng": 139.691711,
+      "arcAlt": 0.06,
+      "status": true
+    },
+    {
+      "order": 8,
+      "from": "JPN",
+      "to": "IDN",
+      "startLat": 35.689487,
+      "startLng": 139.691711,
+      "endLat": -6.2088,
+      "endLng": 106.8456,
+      "arcAlt": 0.06,
+      "status": true
+    },
+    {
+      "order": 9,
+      "from": "IDN",
+      "to": "AUS",
+      "startLat": -6.2088,
+      "startLng": 106.8456,
+      "endLat": -33.8688,
+      "endLng": 151.2093,
+      "arcAlt": 0.05,
+      "status": true
+    },
+    {
+      "order": 10,
+      "from": "AUS",
+      "to": "NZL",
+      "startLat": -33.8688,
+      "startLng": 151.2093,
+      "endLat": -36.8485,
+      "endLng": 174.7633,
+      "arcAlt": 0.05,
+      "status": false
+    },
+    {
+      "order": 11,
+      "from": "NGA",
+      "to": "GHA",
+      "startLat": 6.524379,
+      "startLng": 3.379206,
+      "endLat": 5.603717,
+      "endLng": -0.186964,
+      "arcAlt": 0.05,
+      "status": true
+    },
+    {
+      "order": 12,
+      "from": "GHA",
+      "to": "EGY",
+      "startLat": 5.603717,
+      "startLng": -0.186964,
+      "endLat": 30.04442,
+      "endLng": 31.235712,
+      "arcAlt": 0.06,
+      "status": false
+    },
+    {
+      "order": 13,
+      "from": "EGY",
+      "to": "ZAF",
+      "startLat": 30.04442,
+      "startLng": 31.235712,
+      "endLat": -26.204103,
+      "endLng": 28.047305,
+      "arcAlt": 0.06,
+      "status": true
+    },
+    {
+      "order": 14,
+      "from": "ZAF",
+      "to": "ETH",
+      "startLat": -26.204103,
+      "startLng": 28.047305,
+      "endLat": 9.03,
+      "endLng": 38.74,
+      "arcAlt": 0.04,
+      "status": true
+    },
+    {
+      "order": 15,
+      "from": "ETH",
+      "to": "NGA",
+      "startLat": 9.03,
+      "startLng": 38.74,
+      "endLat": 6.524379,
+      "endLng": 3.379206,
+      "arcAlt": 0.04,
+      "status": true
+    }
+  ]
+}
