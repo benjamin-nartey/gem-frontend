@@ -4,10 +4,13 @@ export default function About() {
   return (
     <section
       id="about"
-      className="lg:px-32 px-4 py-16 w-full mt-[8rem] lg:mt-auto animate-slide-up"
+      className="lg:px-16 px-4 py-16 w-full mt-[8rem] lg:mt-auto animate-slide-up"
     >
+      <h2 className="text-4xl text-black font-bold text-center mb-8">
+        About Us
+      </h2>
       <div className="flex flex-col lg:flex-row justify-center lg:items-start items-center w-full gap-8 lg:h-[35rem] h-auto">
-        <div className="relative w-full shadow-lg lg:order-first order-last lg:h-full h-[30rem]">
+        <div className="relative w-full shadow-lg lg:order-first order-last lg:h-full h-[40rem]">
           <Image
             src={`/pastor5.JPG`}
             alt="pastor"
@@ -16,30 +19,28 @@ export default function About() {
             priority
             quality={90}
             sizes="100"
-            placeholder="blur"
           />
         </div>
 
-        <div className="w-full bg-white text-black text-center">
-          <h2 className="text-4xl text-black font-bold text-center lg:mb-4">
-            About Us
-          </h2>
-          <p className="mb-4 whitespace-break-spaces">
-            Welcome to <b>GEM!</b> We are a community of believers passionate
-            about growing in faith, serving others, and spreading the love of
-            Jesus Christ. Our church is a place where everyone—regardless of
-            background, age, or stage in life—can experience God’s grace, build
-            meaningful connections, and find purpose. At GEM, we believe that
-            faith is a journey meant to be shared.
-          </p>
+        <div className="w-full bg-white text-black">
+          <div className="text-left">
+            <p className="mb-4 whitespace-break-spaces ">
+              Welcome to <b>GEM!</b> We are a community of believers passionate
+              about growing in faith, serving others, and spreading the love of
+              Jesus Christ. Our church is a place where everyone—regardless of
+              background, age, or stage in life—can experience God’s grace,
+              build meaningful connections, and find purpose. At GEM, we believe
+              that faith is a journey meant to be shared.
+            </p>
 
-          <p className="mb-4 whitespace-break-spaces">
-            Our mission is to lead people to a deeper relationship with Christ,
-            empower them to serve, and make a positive impact on our community.
-            Every week, we come together for worship, prayer, and fellowship,
-            and we are committed to providing an inclusive environment where all
-            are welcomed and valued.{" "}
-          </p>
+            <p className="mb-4 whitespace-break-spaces">
+              Our mission is to lead people to a deeper relationship with
+              Christ, empower them to serve, and make a positive impact on our
+              community. Every week, we come together for worship, prayer, and
+              fellowship, and we are committed to providing an inclusive
+              environment where all are welcomed and valued.{" "}
+            </p>
+          </div>
 
           <div className="text-left mb-4">
             <span className="font-bold text-xl">Our Mission</span>

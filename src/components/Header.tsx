@@ -28,7 +28,7 @@ export default function Header() {
         }  border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800`}
       >
         <div className="flex flex-wrap justify-between items-center">
-          <Link href="#" className="relative w-[200px] lg:w-[250px] h-[80px] ">
+          <Link href="#" className="relative  lg:w-[250px] w-[200px] h-[80px] ">
             <Image
               src="/GEM logo long.png"
               alt="GEM logo"

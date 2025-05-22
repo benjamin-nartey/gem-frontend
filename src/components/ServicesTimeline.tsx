@@ -89,13 +89,13 @@ export default function ServicesTimeline() {
           i === 0
             ? { background: "rgb(33, 150, 243)", color: "#fff" }
             : i === 1
-            ? { background: "rgb(22,245,53)", color: "#fff" }
+            ? { background: "		rgb(220, 20, 60)", color: "#fff" }
             : i === 2
             ? { background: "rgb(251,21,232)", color: "#fff" }
             : i === 3
             ? { background: "rgb(221,22,2)", color: "#fff" }
             : i === 4
-            ? { background: "rgb(23,235,22)", color: "#fff" }
+            ? { background: "rgb(148, 0, 211)", color: "#fff" }
             : undefined;
         const arrowStyle =
           i === 0 ? { borderRight: "7px solid  rgb(33, 150, 243)" } : undefined;

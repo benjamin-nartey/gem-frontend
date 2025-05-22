@@ -14,6 +14,7 @@ const config: Config = {
     "bg-kids",
     "bg-drama",
     "bg-prayer",
+    "bg-contactUs",
     "bg-purple-600",
     "bg-emerald-500",
     "bg-sky-500",
@@ -42,6 +43,7 @@ const config: Config = {
         kids: "url('/kids.jpg')",
         drama: "url('/drama.jpg')",
         prayer: "url('/prayer.jpg')",
+        contactUs: "url('/contactUs-bg.jpg')",
       },
       colors: {
         background: "hsl(var(--background))",

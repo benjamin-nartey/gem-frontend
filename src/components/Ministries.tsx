@@ -6,7 +6,7 @@ export default function Ministries() {
   return (
     <section
       id="ministries"
-      className="lg:px-32 px-4 py-16 w-full animate-slide"
+      className="lg:px-16 px-4 py-16 w-full"
     >
       <div className="text-center w-full">
         <h2 className="text-4xl text-black font-bold text-center mb-8">

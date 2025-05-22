@@ -17,10 +17,7 @@ import Header from "@/components/Header";
 
 const hankenGrotesk = Hanken_Grotesk({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "GEM",
-  description: "Official website of Great Empire Ministry",
-};
+
 
 export default function RootLayout({
   children,

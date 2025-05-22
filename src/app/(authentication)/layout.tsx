@@ -6,7 +6,7 @@ const inter = Quicksand({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Login | Grace Empire Ministry",
-  description: "Grace Empire Ministry",
+  description: "Grace Empire Ministry Login Page",
   applicationName: "Grace Empire Ministry",
 };
 
