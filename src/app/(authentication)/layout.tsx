@@ -5,12 +5,12 @@ import "../globals.css";
 const inter = Quicksand({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Login | Grace Empire Ministry",
-  description: "Grace Empire Ministry Login Page",
+  title: "%s | Grace Empire Ministry",
+  description: "Grace Empire Ministry Page",
   applicationName: "Grace Empire Ministry",
 };
 
-export default function RootLayout({
+export default function AuthLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

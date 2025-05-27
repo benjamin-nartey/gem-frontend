@@ -8,13 +8,6 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   safelist: [
-    "bg-melodies",
-    "bg-celebrations",
-    "bg-revolution",
-    "bg-kids",
-    "bg-drama",
-    "bg-prayer",
-    "bg-contactUs",
     "bg-purple-600",
     "bg-emerald-500",
     "bg-sky-500",
@@ -36,15 +29,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        melodies: "url('/aaron-james-zeLE5M85b5Q-unsplash.jpg')",
-        celebrations: "url('/celebrations.jpg')",
-        revolution: "url('/revolution.jpg')",
-        kids: "url('/kids.jpg')",
-        drama: "url('/drama.jpg')",
-        prayer: "url('/prayer.jpg')",
-        contactUs: "url('/contactUs-bg.jpg')",
-      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -158,6 +142,9 @@ const config: Config = {
       },
       transitionProperty: {
         height: "height",
+      },
+      transitionTimingFunction: {
+        "out-flex": "cubic-bezier(0.05, 0.6, 0.4, 0.9)",
       },
     },
   },

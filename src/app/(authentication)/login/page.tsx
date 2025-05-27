@@ -1,7 +1,9 @@
 import LoginForm from "@/components/LoginForm";
 import { Metadata } from "next";
-
-
+export const metadata: Metadata = {
+  title: "Login",
+  description: "This is the login page for Grace Empire Ministry",
+};
 
 export default function page() {
   return (

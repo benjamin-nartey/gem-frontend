@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import { Hanken_Grotesk } from "next/font/google";
 import "../globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -17,8 +17,6 @@ import Header from "@/components/Header";
 
 const hankenGrotesk = Hanken_Grotesk({ subsets: ["latin"] });
 
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,6 +26,7 @@ export default function RootLayout({
     <section className={`${hankenGrotesk.className} antialiased`}>
       <Header />
       {children}
+      <Footer />
     </section>
   );
 }

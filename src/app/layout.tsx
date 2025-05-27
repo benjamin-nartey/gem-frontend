@@ -23,7 +23,7 @@ export default async function RootLayout({
 }>) {
   return (
     <html className="scroll-smooth scrollbar-hide" lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} w-screen overflow-x-hidden`}>
         {children}
         <Toaster />
       </body>

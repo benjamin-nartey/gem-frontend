@@ -17,9 +17,9 @@ export default function EventCard({
     <Link className="group" href={`/event/${id}`}>
       <div className="flex justify-between items-start w-[25rem] gap-6 ">
         <span className="grid place-content-center bg-transparent text-black text-xl font-bold rounded-lg p-4 text-center w-[80px] h-[80px] border-solid border-2 border-violet-900">
-          <h4 className="group-hover:animate-slide-up">
+          <h3 className="group-hover:animate-slide-up">
             {formatDateToShortMonthDay(date)}
-          </h4>
+          </h3>
         </span>
         <div className="">
           <div className="flex justify-between">

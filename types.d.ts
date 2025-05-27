@@ -90,8 +90,6 @@ interface VisitorProps {
   createdAt: Date | string;
 }
 
-
-
 interface EventCardProps {
   id: number;
   title: string;

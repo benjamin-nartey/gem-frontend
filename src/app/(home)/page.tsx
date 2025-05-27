@@ -1,6 +1,5 @@
 import About from "@/components/About";
 import ContactUs from "@/components/ContactUs";
-import Footer from "@/components/Footer";
 import HomePage from "@/components/HomePage";
 import Ministries from "@/components/Ministries";
 import Services from "@/components/Services";
@@ -21,7 +20,7 @@ export default function Home() {
       <Services />
       <UpcomingEvents />
       <ContactUs />
-      <Footer/>
+     
     </>
   );
 }

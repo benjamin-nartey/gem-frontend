@@ -1,14 +1,17 @@
+"use client";
+
 import Image from "next/image";
+
+import { TypingText } from "./CustomText";
+
 
 export default function About() {
   return (
     <section
       id="about"
-      className="lg:px-16 px-4 py-16 w-full mt-[8rem] lg:mt-auto animate-slide-up"
+      className="lg:px-16 px-4 py-16 w-full  lg:mt-auto mt-[1rem] animate-slide-up"
     >
-      <h2 className="text-4xl text-black font-bold text-center mb-8">
-        About Us
-      </h2>
+      <TypingText title="| About Us" textStyles="text-black" />
       <div className="flex flex-col lg:flex-row justify-center lg:items-start items-center w-full gap-8 lg:h-[35rem] h-auto">
         <div className="relative w-full shadow-lg lg:order-first order-last lg:h-full h-[40rem]">
           <Image

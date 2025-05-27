@@ -16,10 +16,11 @@ export default function MinistriesCard({
   link,
 }: MinistriesCardProps) {
   return (
-    <div className="w-full text-center flex items-center justify-center flex-col gap-4">
+    <div className="w-full text-center flex items-center justify-center flex-col gap-4 lg:mb-0 mb-4">
       <div className="relative w-full flex h-[25rem] flex-col justify-center overflow-hidden ">
         <div
-          className={`group w-full h-full relative overflow-hidden ${bgImage} bg-cover bg-center px-2 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:px-10`}
+          style={{ backgroundImage: `url(${bgImage})` }}
+          className={`group w-full h-full relative overflow-hidden bg-cover bg-center px-2 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:px-10`}
         >
           <span
             className={`absolute top-10 z-0 h-20 w-20 rounded-full group-hover:bg-${color} transition-all duration-300 group-hover:scale-[15]`}

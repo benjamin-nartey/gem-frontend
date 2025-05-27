@@ -4,6 +4,8 @@ import Link from "next/link";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 
+
+
 export default function Header() {
   const [header, setHeader] = useState(false);
 
@@ -21,7 +23,9 @@ export default function Header() {
     return () => window.removeEventListener("scroll", scrollHeader);
   }, []);
   return (
-    <header>
+    <header
+     
+    >
       <nav
         className={`fixed top-0 w-full z-50 ${
           header ? "bg-black/75 text-white" : "bg-transparent"
@@ -88,10 +92,10 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="#watch"
+                  href="#contactUs"
                   className="block py-2 pr-4 pl-3 text-white hover:underline transition-all decoration-white "
                 >
-                  Watch
+                  Contact Us
                 </Link>
               </li>
               <li>

@@ -1,3 +1,5 @@
+"use client";
+
 import { Phone } from "lucide-react";
 import Link from "next/link";
 import { FaLocationDot } from "react-icons/fa6";
@@ -6,29 +8,31 @@ import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
+import { TypingText } from "./CustomText";
 
 export default function ContactUs() {
   return (
-    <section id="contactUs" className="h-screen w-full py-16 px-4 lg:px-16 bg-[linear-gradient(to_right_bottom,rgba(36,0,70,0.9),rgba(102,51,153,0.7)),url('/contactUs-bg.jpg')] bg-cover bg-top bg-no-repeat">
+    <section
+      id="contactUs"
+      className="h-screen w-full py-16 px-4 lg:px-16 bg-[linear-gradient(to_right_bottom,rgba(36,0,70,0.95),rgba(102,51,153,0.9)),url('/contactUs-bg.jpg')] bg-cover bg-top bg-no-repeat"
+    >
       <div className="w-full h-full grid place-content-center">
-        <h2 className="text-4xl text-white font-bold text-center mb-8">
-          Contact Us
-        </h2>
-        <div className="flex lg:flex-row flex-col justify-center items-start lg:gap-8 gap-4">
-          <div className="text-white flex flex-col items-start justify-start gap-4">
-            <p className="mb-4">
+        <TypingText title=" | Contact Us" textStyles="text-white" />
+        <div className="w-full flex lg:flex-row flex-col justify-center lg:items-start items-center lg:gap-0 gap-4">
+          <div className="text-white flex flex-col lg:items-start items-center lg:justify-start justify-center gap-4">
+            <p className="mb-4 lg:text-left text-center">
               Feel free to use the form or drop as an email. Old-fashioned phone
               calls work too
             </p>
-            <div className="flex justify-start items-start gap-2">
+            <div className="flex justify-start items-center gap-2">
               <Phone className="text-orange-500 " />
               <span>+233 247 450 384</span>
             </div>
-            <div className="flex justify-start items-start gap-2">
+            <div className="flex justify-start items-center gap-2">
               <MdEmail className="text-orange-500" />
               <span>graceempire@gmail.org</span>
             </div>
-            <div className="flex justify-start items-start gap-2">
+            <div className="flex justify-start items-center gap-2">
               <FaLocationDot className="text-orange-500" />
               <Link
                 className="hover:underline"
@@ -40,7 +44,7 @@ export default function ContactUs() {
             </div>
           </div>
 
-          <div>
+          <div className="w-full lg:flex block justify-end">
             <form className="p-4 text-white bg-transparent border-solid border border-white shadow-lg lg:w-[28rem] w-full flex flex-col items-start justify-start gap-4">
               <div className="w-full">
                 <Label className="mb-2" htmlFor="name">
@@ -51,11 +55,12 @@ export default function ContactUs() {
                   id="name"
                   name="name"
                   type="text"
+                  autoComplete="true"
                 />
               </div>
 
               <div className="w-full">
-                <Label className="mb-2" htmlFor="name">
+                <Label className="mb-2" htmlFor="email">
                   Email
                 </Label>
                 <Input
@@ -63,11 +68,12 @@ export default function ContactUs() {
                   id="email"
                   name="email"
                   type="email"
+                  autoComplete="true"
                 />
               </div>
 
               <div className="w-full">
-                <Label className="mb-2" htmlFor="name">
+                <Label className="mb-2" htmlFor="phone">
                   Phone
                 </Label>
                 <Input
@@ -75,6 +81,7 @@ export default function ContactUs() {
                   id="phone"
                   name="phone"
                   type="tel"
+                  autoComplete="true"
                 />
               </div>
 
@@ -91,7 +98,7 @@ export default function ContactUs() {
               </div>
 
               <Button
-                className="bg-orange-500 text-white hover:text-black hover:bg-orange-300 w-full"
+                className="bg-orange-500 mt-4 text-white hover:text-black hover:bg-orange-300 w-full"
                 type="submit"
               >
                 Submit
