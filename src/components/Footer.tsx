@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaTiktok } from "react-icons/fa";
-import { FaInstagram, FaMeta, FaSnapchat, FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaSnapchat, FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -107,7 +107,7 @@ export default function Footer() {
               className="hover:scale-75 transition-all"
               href={`#`}
             >
-              <FaMeta size={24} />
+              <FaFacebookF size={24} />
             </Link>
             <Link
               aria-label="snapchat"

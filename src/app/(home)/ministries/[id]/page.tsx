@@ -1,3 +1,4 @@
+import Panorama from "@/components/PanoramaCarousel";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,9 +8,26 @@ export const metadata: Metadata = {
 
 export default function Ministries() {
   return (
-    <section className="lg:px-16 px-4 py-8 h-screen w-full text-white bg-primary overflow-x-hidden overflow-y-scroll scrollbar-hide scroll-smooth">
-      <div className="w-full min-h-full grid place-content-center">
-        <h1 className="font-bold text-4xl">Empire Melodies</h1>
+    <section className="h-screen lg:px-16 px-4 py-16 w-full text-white bg-primary overflow-x-hidden overflow-y-scroll scrollbar-hide scroll-smooth">
+      <div className="w-full min-h-full flex flex-col items-center justify-center">
+        <div className="w-full">
+          <div className="w-full">
+            <h1 className="text-3xl font-bold capitalize text-center mb-4">
+              Empire Melodies
+            </h1>
+            <div className="w-full flex items-center justify-center ">
+              <p className="lg:w-2/6 w-full">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+                explicabo facilis est, soluta sequi dolorum atque alias
+                laboriosam totam at architecto ducimus animi consequuntur
+                expedita tempore enim nesciunt distinctio provident!
+              </p>
+            </div>
+          </div>
+          <div className="w-full">
+            <Panorama />
+          </div>
+        </div>
       </div>
     </section>
   );

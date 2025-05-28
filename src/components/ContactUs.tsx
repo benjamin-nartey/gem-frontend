@@ -98,7 +98,7 @@ export default function ContactUs() {
               </div>
 
               <Button
-                className="bg-orange-500 mt-4 text-white hover:text-black hover:bg-orange-300 w-full"
+                className="bg-orange-500 mt-4 text-black font-bold hover:text-black hover:bg-orange-300 w-full"
                 type="submit"
               >
                 Submit
